@@ -3,7 +3,6 @@ import pandas as pd
 import streamlit as st
 
 #item 3
-
 #identificando as mulheres
 urlMulheres = "https://dadosabertos.camara.leg.br/api/v2/deputados?siglaSexo=F&ordem=ASC&ordenarPor=nome"
 resposta = req.get(urlMulheres)
