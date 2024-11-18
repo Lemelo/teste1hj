@@ -1,8 +1,10 @@
+#item 2
 import requests as req
 import pandas as pd
 import streamlit as st
 
 #item 3
+
 #identificando as mulheres
 urlMulheres = "https://dadosabertos.camara.leg.br/api/v2/deputados?siglaSexo=F&ordem=ASC&ordenarPor=nome"
 resposta = req.get(urlMulheres)
@@ -48,6 +50,6 @@ st.bar_chart(dfEstados,
             x = 'siglaUf',
             y = 'quantidade',
             x_label = 'Siglas dos estados',
-            y_label = 'Quantidade de deputados'
-      )
+            y_label = 'Quantidade de deputados' 
+      )        
 st.dataframe(dfFiltrado)
